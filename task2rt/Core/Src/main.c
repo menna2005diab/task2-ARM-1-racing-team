@@ -107,6 +107,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  //page 227
 	  current_button_state = HAL_GPIO_ReadPin (GPIOA,GPIO_PIN_0);
 	 	  if(current_button_state!= last_button_state){
 	 		  //page 50
@@ -115,6 +116,7 @@ int main(void)
 	 			  led_state= 1 - led_state;
 	 			  if (led_state == 1)
 	 			 {
+					 //page 227
 	 			     HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);   // LED ON
 	 			 }
 	 			 else
